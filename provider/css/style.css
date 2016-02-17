@@ -40,13 +40,10 @@ body {
 	text-align: center;
 }
 a {
-	color:#de675f;
-	-webkit-transition: all 300ms ease-out;
-	-moz-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
+	color:#d6afd0;
 }
 a:hover {
-	color:#ec6d65;
+	color:#debfd9;
 }
 img {
 	width: 100%;
@@ -60,8 +57,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {	
-	color:#de675f;
+h6 {
+	color:#d6afd0;
 	font-family: 'ostrich_sansbold','Helvetica Neue', Helvetica, sans-serif;
 	font-weight: normal;
 	line-height: 1.5;
@@ -85,7 +82,7 @@ header {
 }
 blockquote {
 	border-left: none;
-	padding: 4em 2em;	
+	padding: 4em 2em;
 	margin-bottom: 0;
 	text-align: left;
 }
@@ -104,12 +101,12 @@ blockquote.caption-2:before {
 .subline {
 	padding: 1em 0.5em 0;
 }
-.section-title-container {	
+.section-title-container {
 	text-align: center;
-	margin: 6em 0 2em;
+	margin: 2em 0 2em;
 }
-.section-title {	
-	border-bottom: 4px double #c9b29b;
+.section-title {
+	border-bottom: 4px double #615d56;
 	display: inline-block;
 	text-align: center;
 	font-size: 4em;
@@ -118,12 +115,12 @@ blockquote.caption-2:before {
 	width: 100%;
 }
 .section-title em {
-	color:#987c61;
+	color:#c3baac;
 	font-family: 'Playfair Display', serif;
 	font-size: 0.5em;
 }
 .hearts {
-	background:url(../img/icon-hearts.png) no-repeat center bottom;	
+	background:url(../img/icon-hearts.png) no-repeat center bottom;
 	display: block;
 	height: 2em;
 	position: relative;
@@ -166,10 +163,10 @@ blockquote.caption-2:before {
 	font-size: 12em;
 }
 .date-container, .subline, .side-nav {
-	color: #987c61;
+	color: #c3baac;
 	font-family: 'Roboto Slab', serif;
-	font-weight:bold;	
-	text-transform: uppercase;	
+	font-weight:bold;
+	text-transform: uppercase;
 }
 .date-container .day-meta {
 	font-family: 'Playfair Display', serif;
@@ -217,7 +214,7 @@ div[id*="section-"] {
 	text-align: center;
 	padding: 4em;
 	vertical-align: middle;
-	width: 50%;	
+	width: 50%;
 }
 .block-logo:hover {
 	background-color: #FFF;
@@ -262,40 +259,39 @@ aside .postfix.button {
 	padding:1.43em 0;
 }
 .side-nav {
-	background-color:#ec6d65; /* fallback */
-	background: rgba(236, 109, 101, 0.9); 
+	background-color:#debfd9; /* fallback */
+	background: rgba(222, 191, 217, 0.9);
 	margin: 0;
 	padding:0;
 }
-.side-nav li { 
+.side-nav li {
 	margin:0;
 }
 .side-nav li a {
 	color:#fff;
-	border-top: 1px solid #fb918a;
+	border-top: 1px solid #e6cfe2;
 	display: block;
 	padding: 1.25em;
 }
 .side-nav li.active a,
-.side-nav li a:hover {	
+.side-nav li a:hover {
 	background-color:#fff;
-	color:#de675f;
+	color:#d6afd0;
 }
 .side-nav-container {
-	margin: 0 auto;
-	width: 59%;
+	margin: 0;
 }
-.shadow {	
+.shadow {
 	-webkit-box-shadow: 0 0 1.5em #6e6e6e;
 	   -moz-box-shadow: 0 0 1.5em #6e6e6e;
 			box-shadow: 0 0 1.5em #6e6e6e;
 }
-.logo {		
+.logo {
 	margin:5em auto;
 }
 .logo a {
-	background-color: #de675f; /* fallback */
-	background-color: rgba( 222, 103, 95, 0.9);
+	background-color: #d6afd0; /* fallback */
+	background-color: rgba( 214, 175, 208, 0.9);
 	color:#fff;
 	display: block;
 	font-size: 2.5em;
@@ -312,18 +308,18 @@ aside .postfix.button {
 /* Global Buttons */
 
 button, .button {
-	background-color: #de675f;
+	background-color: #d6afd0;
 	border-color: transparent;
 	-webkit-box-shadow: none;
 		    box-shadow: none;
 	text-transform: uppercase;
 	padding: 1.250em 1.5em;
 }
-button:hover, 
-button:focus, 
-.button:hover, 
+button:hover,
+button:focus,
+.button:hover,
 .button:focus {
-	background-color:#ec6d65;
+	background-color:#debfd9;
 }
 
 /* High Quality/Definition Images */
@@ -331,201 +327,6 @@ button:focus,
 .hd {
 	margin-bottom: 1em;
 }
-
-/*-----------------------------------------------------------------------------------*/
-/*	4.	Forms - Base Styles
-/*-----------------------------------------------------------------------------------*/
-
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea {
-	background-color: #F5F5F6;
-	border: 1px solid #F5F5F6;
-	border-radius: 3px; 
-	height: 38px;
-	color: #818b92;
-	-webkit-font-smoothing: antialiased;
-	-webkit-appearance: none;
-	-webkit-box-shadow: none;
-			box-shadow: none;
-	-webkit-transition: .25s ease-in;
-	   -moz-transition: .25s ease-in;
-		    transition: .25s ease-in;
-}
-input[type="text"]:focus, 
-input[type="password"]:focus, 
-input[type="date"]:focus, 
-input[type="datetime"]:focus, 
-input[type="datetime-local"]:focus, 
-input[type="month"]:focus, 
-input[type="week"]:focus, 
-input[type="email"]:focus, 
-input[type="number"]:focus, 
-input[type="search"]:focus, 
-input[type="tel"]:focus, 
-input[type="time"]:focus, 
-input[type="url"]:focus, 
-textarea:focus {
-	background-color: #FFF;
-	border:1px solid #de675f;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-		    box-shadow: none;
-} 
-
-label {
-	text-align: left;
-	margin-bottom: 0.5em;
-}
-
-/*==== RSVP ====*/
-
-.rsvp-form {
-	margin:2em 0 4em;
-}
-.rsvp-form fieldset {
-	border-color:#e6e6e6;
-	padding: 2em 0.5em;
-	margin: 1em 1em 3em;
-}
-.rsvp-form legend {
-	font-weight: normal;
-	padding: 0 1em;
-	line-height: 1.4;
-}
-.rsvp-form div[class*="large-"] {
-	padding-left:0.9375em!important;
-	padding-right:0.9375em!important;
-}
-.rsvp-attendance label {
-	text-align:center;
-	display: inline-block;
-}
-.rsvp-attendance .radio-label {
-	display: block;
-	margin-top: 1em;
-}
-
-form.custom .radio {
-	border: solid 5px #e6e6e6;
-	height: 29px;
-	width: 30px;
-}
-form.custom .custom.radio.checked:before {
-	top: 4px;
-	left: 5px;
-	background-color: #e6e6e6;
-	width: 10px;
-	height: 10px;
-}
-form.custom .dropdown {
-	text-align: left;
-}
-
-/*==== Error Handling ====*/
-
-[data-abide] .error small.error, 
-[data-abide] span.error, 
-[data-abide] small.error {
-	display: block;
-	padding: 0.875em 0.25em;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	font-size: 0.75em;
-	font-weight: normal;
-	background: #c60f13;
-	color: white; 
-}
-[data-abide] span.error, 
-[data-abide] small.error {
-	display: none; 
-}
-span.error, small.error {
-	display: block;
-	padding: 0.375em 0.25em;
-	margin-top: 0;
-	margin-bottom: 1em;
-	font-size: 0.75em;
-	font-weight: bold;
-	background: #c60f13;
-	color: white; 
-}
-.error input,
-.error textarea,
-.error select {
-	border-color: #c60f13;
-	background-color: rgba(198, 15, 19, 0.1);
-	margin-bottom: 0; 
-}
-.error input:focus,
-.error textarea:focus,
-.error select:focus {
-  	background: #fafafa;
-  	border-color: #999999; 
-}
-.error label,
-.error label.error {
-  	color: #c60f13; 
-}
-.error > small,
-.error small.error {
-	display: block;
-	padding: 0.375em 0.25em;
-	margin-top: 0;
-	margin-bottom: 1em;
-	font-size: 0.75em;
-	font-weight: bold;
-	background: #c60f13;
-	color: white; 
-}
-.error span.error-message {
-	display: block; 
-}
-input.error,
-textarea.error {
-	border-color: #c60f13;
-	background-color: rgba(198, 15, 19, 0.1);
-	margin-bottom: 0; 
-}
-input.error:focus,
-textarea.error:focus {
-	background: #fafafa;
-	border-color: #999999; 
-}
-.error select {
-  	border-color: #c60f13;
-  	background-color: rgba(198, 15, 19, 0.1); 
-}
-.error select:focus {
-	background: #fafafa;
-	border-color: #999999; 
-}
-label.error {
-	color: #c60f13; 
-}
-
-/*==== Notification Panel ====*/
-
-.message-panel {
-	background-color: #ffffe0;
-	border-color: #e6db55;
-	padding: 1em;
-	font-size: 0.850em;
-	margin: 0 0 2em;
-}
-
-
 /*-----------------------------------------------------------------------------------*/
 /*	5.	Image Gallery
 /*-----------------------------------------------------------------------------------*/
@@ -541,14 +342,14 @@ label.error {
 	height: auto;
 }
 .overlay-label {
-	background-color: rgba( 222, 103, 95, 0.7);
+	background-color: rgba( 214, 175, 208, 0.7);
 	display: inline;
 	left: 0px;
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 3px;
 	opacity: 0;
-	margin: 0px;	
+	margin: 0px;
 	position: absolute;
 	top: 0px;
 	width: 100%;
@@ -598,7 +399,7 @@ label.error {
 /*-----------------------------------------------------------------------------------*/
 
 footer {
-	overflow: hidden;	
+	overflow: hidden;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 2em;
@@ -624,6 +425,6 @@ footer a {
 	margin: 3em 0 2em;
 }
 .preloader {
-	background:url(../img/status.gif) no-repeat center center; 
+	background:url(../img/status.gif) no-repeat center center;
 	min-height:400px;
 }

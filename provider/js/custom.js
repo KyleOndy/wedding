@@ -56,51 +56,8 @@ $(document).ready(function() {
 
 	flexSlider();
 
-	/*-----------------------------------------------------------------------------------*/
-	/*	RSVP Form Validation + Submission
-	/*-----------------------------------------------------------------------------------*/
-
-	function rsvpFormSubmit() {
-
-		// this is the id of the form
-		var formID = $("#js-form");
-		
-		// submits form with ajax method
-		formID.on("submit", function() {
-
-			$.ajax({
-				url: "mailer.php",
-				type: "POST",		    	
-		        data: formID.serialize(), // serializes the form's elements.
-
-		        success: function(data) {
-		        	$(".js-display")
-		        				.addClass("message-panel")
-		        				.html(data); // show response from the php script.
-		        }		    
-
-		    });
-
-		    return false; // avoid to execute the actual submit of the form.
-
-		});
-
-		// Show/Hide RSVP Menu selection on accept/decline
-		$(".decline").on("click", function(){
-			$(".rsvp-meal-choice").fadeOut();
-		});	
-		$(".accept").on("click", function(){
-			$(".rsvp-meal-choice").fadeIn();
-		});	
-
-	}
-	rsvpFormSubmit();
-
-
-});
-
 /*-----------------------------------------------------------------------------------*/
-/*	Google Map API 
+/*	Google Map API
 /*  Credit to: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
 /*-----------------------------------------------------------------------------------*/
 
@@ -116,7 +73,7 @@ function initialize() {
 	/* For details on styling go to the link below:
 	/* http://www.evoluted.net/thinktank/web-design/custom-google-maps-style-tool */
 	/*----------------------------------------------------------------------------*/
-	
+
 	var featureOpts = [
 		{
 			"featureType": "road",
