@@ -54,6 +54,8 @@ jQuery(function($){
 
     // GENERAL SETTINGS
     length:400,                                      //Integer: For posts with text longer than this length, show an ellipsis.
+    show_media:true,
+    update_period: 900,
     template: "../template.html",
     callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
       console.log("All posts collected!");
