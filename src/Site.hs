@@ -25,6 +25,10 @@ main = hakyllWith hakyllConf site
 
 site :: Rules ()
 site = do
+    match "google148fb1eb3c82bca7.html" $ do
+        route idRoute
+        compile copyFileCompiler
+
     match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
