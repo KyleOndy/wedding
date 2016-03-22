@@ -25,7 +25,7 @@ main = hakyllWith hakyllConf site
 
 site :: Rules ()
 site = do
-    match "google148fb1eb3c82bca7.html" $ do
+    match (fromList["google148fb1eb3c82bca7.html", "template.html"]) $ do
         route idRoute
         compile copyFileCompiler
 
